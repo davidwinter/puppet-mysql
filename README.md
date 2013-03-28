@@ -6,7 +6,7 @@ Basic install of `mysql` but sets it to be `UTF-8` from the get-go.
 
 With librarian-puppet, add the following to your Puppetfile:
 
-	mod 'postfix',
+	mod 'mysql',
 		:git => 'git://github.com/davidwinter/puppet-mysql.git'
 
 Then run `librarian-puppet install`.
