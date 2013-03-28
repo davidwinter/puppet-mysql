@@ -1,8 +1,24 @@
-puppet-mysql
-============
+# puppet-mysql
 
-Installs MySQL in a UTF-8 manner by default.
+Basic install of `mysql` but sets it to be `UTF-8` from the get-go.
 
-To use:
+## Install
 
-    class { 'mysql': }
+With librarian-puppet, add the following to your Puppetfile:
+
+	mod 'postfix',
+		:git => 'git://github.com/davidwinter/puppet-mysql.git'
+
+Then run `librarian-puppet install`.
+
+## Usage
+
+	class { 'mysql': }
+
+## Author
+
+David Winter <i@djw.me>
+
+## Licence
+
+MIT
